@@ -1,4 +1,6 @@
-﻿namespace Domain
+﻿using Domain.Characters;
+
+namespace Domain.AttackBehavior
 {
     public interface IAttackBehavior
     {

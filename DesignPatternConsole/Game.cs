@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Domain;
+using Domain.Characters;
 
 namespace DesignPatternConsole
 {
@@ -40,7 +40,7 @@ namespace DesignPatternConsole
             foreach (var character in winner)
             {
                 builder.Append(character.Name);
-                builder.Append(" ");
+                builder.Append(", ");
             }
 
             Console.WriteLine("L'équipe avec {0}a gagné !", builder);

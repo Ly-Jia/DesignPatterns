@@ -1,4 +1,6 @@
-﻿namespace Domain
+﻿using Domain.AttackBehavior;
+
+namespace Domain.Characters
 {
     public class Paladin : Character
     {

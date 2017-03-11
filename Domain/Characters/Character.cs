@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Domain.AttackBehavior;
 
-namespace Domain
+namespace Domain.Characters
 {
     public abstract class Character
     {
@@ -28,9 +28,9 @@ namespace Domain
         public int Intelligence { get; set; }
         public int Defense { get; set; }
         public int MagicResist { get; set; }
-        private IAttackBehavior attackBehavior;
+        protected IAttackBehavior attackBehavior;
 
-        public void Attack(Character character)
+        public virtual void Attack(Character character)
         {
             attackBehavior.Attack(this, character);
         }

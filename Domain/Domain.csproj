@@ -41,16 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Character.cs" />
-    <Compile Include="Healer.cs" />
-    <Compile Include="IAttackBehavior.cs" />
-    <Compile Include="Mage.cs" />
-    <Compile Include="MagicAttackBehavior.cs" />
-    <Compile Include="Paladin.cs" />
+    <Compile Include="AttackBehavior\BonusMagicAttackBehavior.cs" />
+    <Compile Include="Characters\Character.cs" />
+    <Compile Include="Characters\Healer.cs" />
+    <Compile Include="Items\Grimoire.cs" />
+    <Compile Include="Items\Sword.cs" />
+    <Compile Include="AttackBehavior\IAttackBehavior.cs" />
+    <Compile Include="Items\Item.cs" />
+    <Compile Include="Characters\Mage.cs" />
+    <Compile Include="AttackBehavior\MagicAttackBehavior.cs" />
+    <Compile Include="Characters\Paladin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StrengthAttackBehavior.cs" />
-    <Compile Include="Warrior.cs" />
+    <Compile Include="AttackBehavior\StrengthAttackBehavior.cs" />
+    <Compile Include="Characters\Warrior.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
