@@ -43,8 +43,10 @@
   <ItemGroup>
     <Compile Include="Bill.cs" />
     <Compile Include="Domain\Beverage.cs" />
+    <Compile Include="Domain\Chantilly.cs" />
     <Compile Include="Domain\DarkCoffee.cs" />
     <Compile Include="Domain\IcedTea.cs" />
+    <Compile Include="Domain\Option.cs" />
     <Compile Include="Domain\Ristretto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
