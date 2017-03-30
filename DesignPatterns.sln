@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternConsole", "Des
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorCoffee", "DecoratorCoffee\DecoratorCoffee.csproj", "{7FF4C82D-2FF5-4BB8-9B74-15B0F4E29DA3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{3C92853A-24D4-470B-966D-46203E35378E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{7FF4C82D-2FF5-4BB8-9B74-15B0F4E29DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FF4C82D-2FF5-4BB8-9B74-15B0F4E29DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FF4C82D-2FF5-4BB8-9B74-15B0F4E29DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C92853A-24D4-470B-966D-46203E35378E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C92853A-24D4-470B-966D-46203E35378E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C92853A-24D4-470B-966D-46203E35378E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C92853A-24D4-470B-966D-46203E35378E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

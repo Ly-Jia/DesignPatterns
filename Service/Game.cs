@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Domain.Characters;
 
-namespace DesignPatternConsole
+namespace Service
 {
     public class Game
     {
