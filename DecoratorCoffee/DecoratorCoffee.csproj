@@ -54,8 +54,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\CoffeeSection.cs" />
+    <Compile Include="Service\CoffeeIterator.cs" />
+    <Compile Include="Service\IBeverageIterator.cs" />
+    <Compile Include="Service\ISection.cs" />
     <Compile Include="Service\Menu.cs" />
     <Compile Include="Service\TeaSection.cs" />
+    <Compile Include="Service\TeaIterator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

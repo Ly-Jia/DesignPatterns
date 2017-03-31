@@ -3,18 +3,25 @@ using DecoratorCoffee.Domain;
 
 namespace DecoratorCoffee.Service
 {
-    public class TeaSection
+    public class TeaSection : ISection
     {
-        public Beverage[] Items { get; private set; }
+        private Beverage[] items;
         private readonly int MAX_ITEMS = 4;
         private int numberOfItems;
+        public string Name { get; set; }
 
         public TeaSection()
         {
-            Items = new Beverage[MAX_ITEMS];
-            Items[0] = new EarlGrey();
-            Items[1] = new IcedTea();
+            items = new Beverage[MAX_ITEMS];
+            items[0] = new EarlGrey();
+            items[1] = new IcedTea();
             numberOfItems = 2;
+            Name = "Tea selection";
+        }
+
+        public IBeverageIterator CreateIterator()
+        {
+            return new TeaIterator(items);
         }
 
         public void AddItem(Beverage beverage)
@@ -25,7 +32,7 @@ namespace DecoratorCoffee.Service
             }
             else
             {
-                Items[numberOfItems] = beverage;
+                items[numberOfItems] = beverage;
                 numberOfItems += 1;
             }
         }

@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using DecoratorCoffee.Domain;
+using DecoratorCoffee.Service;
 
 namespace DecoratorCoffee
 {
@@ -8,17 +7,8 @@ namespace DecoratorCoffee
     {
         static void Main(string[] args)
         {
-            var darkCoffee = new DarkCoffee();
-            var ristretto = new Ristretto();
-            var icedTea = new IcedTea();
-            var darkCoffeeWithChantilly = new Chantilly(new Chantilly(darkCoffee));
-
-            var beverages = new List<Beverage> { darkCoffee, ristretto, icedTea, darkCoffeeWithChantilly };
-
-            var bill = new Bill(beverages);
-
-            bill.Print();
-
+            var menu = new Menu(new CoffeeSection(), new TeaSection());
+            menu.Print();
             Console.ReadKey();
         }
     }

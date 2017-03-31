@@ -3,22 +3,29 @@ using DecoratorCoffee.Domain;
 
 namespace DecoratorCoffee.Service
 {
-    public class CoffeeSection
+    public class CoffeeSection : ISection
     {
-        public IList<Beverage> Items { get; private set; }
+        private IList<Beverage> items;
+        public string Name { get; set; }
 
         public CoffeeSection()
         {
-            Items = new List<Beverage>
+            items = new List<Beverage>
             {
                 new DarkCoffee(),
                 new Ristretto()
             };
+            Name = "Coffee selection";
         }
 
+        public IBeverageIterator CreateIterator()
+        {
+            return new CoffeeIterator(items);
+        }
+        
         public void AddBeverage(Beverage beverage)
         {
-            Items.Add(beverage);
+            items.Add(beverage);
         }
     }
 }
