@@ -24,6 +24,11 @@ namespace Service
                 var enemy = TeamB.ElementAt(TeamA.IndexOf(character));
                 character.Attack(enemy);
                 enemy.Attack(character);
+                if (enemy is IGroupMagic)
+                {
+                    var healer = enemy as IGroupMagic;
+                    healer.CastSpellOnGroup();
+                }
             }
         }
 

@@ -4,10 +4,6 @@ namespace Domain.Characters
 {
     public abstract class Character
     {
-        public Character()
-        {
-            
-        }
             
         public Character(string name, int hp, int mp, int strength, int intelligence, int defense, int magicResist, IAttackBehavior attackBehavior)
         {
@@ -29,6 +25,10 @@ namespace Domain.Characters
         public int Defense { get; set; }
         public int MagicResist { get; set; }
         protected IAttackBehavior attackBehavior;
+
+        protected Character()
+        {
+        }
 
         public virtual void Attack(Character character)
         {
