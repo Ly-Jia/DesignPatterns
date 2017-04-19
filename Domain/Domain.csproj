@@ -44,8 +44,7 @@
     <Compile Include="AttackBehavior\BonusMagicAttackBehavior.cs" />
     <Compile Include="Characters\Character.cs" />
     <Compile Include="Characters\Healer.cs" />
-    <Compile Include="Characters\IGroupMagic.cs" />
-    <Compile Include="Characters\IMagicReceiver.cs" />
+    <Compile Include="Characters\HealingSpellArgs.cs" />
     <Compile Include="Items\Grimoire.cs" />
     <Compile Include="Items\Sword.cs" />
     <Compile Include="AttackBehavior\IAttackBehavior.cs" />

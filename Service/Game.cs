@@ -24,10 +24,10 @@ namespace Service
                 var enemy = TeamB.ElementAt(TeamA.IndexOf(character));
                 character.Attack(enemy);
                 enemy.Attack(character);
-                if (enemy is IGroupMagic)
+                if (enemy is Healer)
                 {
-                    var healer = enemy as IGroupMagic;
-                    healer.CastSpellOnGroup();
+                    var healer = enemy as Healer;
+                    healer.OnCastSpell();
                 }
             }
         }
